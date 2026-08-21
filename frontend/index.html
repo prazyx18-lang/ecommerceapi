@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopEasy - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            ShopEasy
+        </div>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for products, brands and more"
+            >
+
+            <button onclick="searchProducts()">
+                🔍
+            </button>
+
+        </div>
+
+<nav>
+
+    <a href="index.html">
+        Home
+    </a>
+
+    <a href="products.html">
+        Products
+    </a>
+
+    <a href="#categories">
+        Categories
+    </a>
+
+    <a href="login.html" id="loginLink">
+        Login
+    </a>
+
+    <button
+        id="logoutButton"
+        style="display: none;"
+    >
+        Logout
+    </button>
+
+    <a href="cart.html" class="cart-btn">
+        🛒 Cart
+        <span id="cartCount">0</span>
+    </a>
+
+</nav>
+
+    </header>
+
+
+
+    <!-- CATEGORY BAR -->
+
+    <section class="category-bar">
+
+        <div id="categoryList" class="category-list">
+
+            <!-- Categories loaded from backend -->
+
+        </div>
+
+    </section>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Big Deals. Great Prices.
+            </h1>
+
+            <p>
+                Everything you need, all in one place.
+            </p>
+
+            <a
+                href="products.html"
+                class="shop-now"
+            >
+                Shop Now    
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEALS -->
+
+    <section class="products" id="products">
+
+        <div class="section-header">
+
+            <h2>
+                Deals of the Day
+            </h2>
+
+            <a href="products.html">
+                View All →
+            </a>
+
+        </div>
+
+
+        <div
+            id="productList"
+            class="product-grid"
+        >
+
+            <p>
+                Loading products...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section
+        class="categories"
+        id="categories"
+    >
+
+        <div class="section-header">
+
+            <h2>
+                Shop By Category
+            </h2>
+
+        </div>
+
+        <div
+            id="categoryCards"
+            class="category-cards"
+        >
+
+            <!-- Categories loaded here -->
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div>
+
+            <h3>
+                ShopEasy
+            </h3>
+
+            <p>
+                Your one-stop online shopping destination.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="#categories">
+                Categories
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Customer Service
+            </h3>
+
+            <p>
+                Help Center
+            </p>
+
+            <p>
+                Contact Us
+            </p>
+
+            <p>
+                Returns
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+
+<script src="auth.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

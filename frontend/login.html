@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            ShopEasy
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="index.html#categories">Categories</a>
+        </nav>
+
+    </header>
+
+
+    <main class="auth-container">
+
+        <div class="auth-card">
+
+            <h1>Welcome Back</h1>
+
+            <p>
+                Login to your ShopEasy account
+            </p>
+
+          <button
+    type="button"
+    id="loginButton"
+>
+    Login 
+</button>
+            <p id="loginMessage"></p>
+
+            <p class="auth-link">
+                Don't have an account?
+                <a href="register.html">
+                    Create Account
+                </a>
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>
