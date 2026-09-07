@@ -102,7 +102,7 @@ async function initAuth0() {
 
                 const response =
                     await fetch(
-                        "http://localhost:3000/users/sync",
+                        "https://ecommerceapi-k1fb.onrender.com/users/sync",
                         {
                             method: "POST",
 
@@ -373,7 +373,7 @@ async function loadCart() {
 
         const response =
             await fetch(
-                "http://localhost:3000/cart",
+                "https://ecommerceapi-k1fb.onrender.com/cart",
                 {
                     method: "GET",
 

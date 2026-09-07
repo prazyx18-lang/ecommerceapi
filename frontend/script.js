@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:3000";
-
+const API_URL = "https://ecommerceapi-k1fb.onrender.com";
 let allProducts = [];
 let allCategories = [];
 
@@ -352,7 +351,7 @@ async function addToCart(productId) {
 
 
         const response = await fetch(
-            "http://localhost:3000/cart",
+             "https://ecommerceapi-k1fb.onrender.com/cart",
             {
                 method: "POST",
 
@@ -454,7 +453,7 @@ async function updateCartCount() {
         // Get cart from MySQL
         const response =
             await fetch(
-                "http://localhost:3000/cart",
+                "https://ecommerceapi-k1fb.onrender.com/cart",
                 {
                     method: "GET",
 
